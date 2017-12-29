@@ -1,0 +1,6 @@
+.Rhistory
+.Rproj.user
+.httr-oauth
+.RData
+data/*.csv
+data/*.rds
