@@ -25,6 +25,8 @@ title: `r sprintf("%s's Year In Review", params$gh_user)`
 # Once it's up on GitHub, do not hesitate to as questions in issues or even submit PRs for views you create.
 #
 # IMPORTANT set "include_wordpress" above to "no" if you aren't a wordpress users (or remove those code chunks)
+#
+# You ALSO need GITHUB_PAT setup in your environment. See https://github.com/r-lib/gh/blob/eecde016754be7769f6f401deb39cc90f3ac7cdd/R/gh_whoami.R for details.
 ```
 
 ```{r setup, include=FALSE}
@@ -35,6 +37,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, fig.width=1
 library(gh) # devtools::install_github("r-lib/gh")
 library(stackr) # devtools::install_github("dgrtwo/stackr")
 library(pressur) # devtools::install_github("hrbrmstr/pressur")
+library(jerichojars) # devtools::install_github("hrbrmstr/jerichojars") # implies rJava requirement
 library(jericho) # devtools::install_github("hrbrmstr/jericho") # implies rJava requirement
 
 # NOTE: you also need scales and DT but I almost never library() them anymore
